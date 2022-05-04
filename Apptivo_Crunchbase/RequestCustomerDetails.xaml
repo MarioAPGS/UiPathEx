@@ -1,0 +1,213 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="RequestCustomerDetails" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="CompanyName" Type="InArgument(x:String)" />
+    <x:Property Name="Details" Type="OutArgument(sd:DataTable)" />
+  </x:Members>
+  <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
+  <sap:VirtualizedContainerService.HintSize>938,1460</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="RequestCustomerDetails" sap:VirtualizedContainerService.HintSize="476,1395" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="CrunchbaseUrl">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">https://www.crunchbase.com/organization/</Literal>
+        </Variable.Default>
+      </Variable>
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Crunchbase" sap:VirtualizedContainerService.HintSize="434,1303" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="39305500-3e2e-45f4-8c89-0599b13efecd" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,1087" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="WebUrl" />
+              <Variable x:TypeArguments="x:String" Name="Employees" />
+              <Variable x:TypeArguments="x:String" Name="Place" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="334,81" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Version="V1">
+              <uix:NGoToUrl.Url>
+                <InArgument x:TypeArguments="x:String">
+                  <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">CrunchbaseUrl + CompanyName</mca:CSharpValue>
+                </InArgument>
+              </uix:NGoToUrl.Url>
+            </uix:NGoToUrl>
+            <ui:BuildDataTable DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Name&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;WebUrl&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Employees&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Place&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;">
+              <ui:BuildDataTable.DataTable>
+                <OutArgument x:TypeArguments="sd:DataTable">
+                  <mca:CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_9">Details</mca:CSharpReference>
+                </OutArgument>
+              </ui:BuildDataTable.DataTable>
+            </ui:BuildDataTable>
+            <uix:NGetText DisplayName="Get Text 'www.uber.com'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="39305500-3e2e-45f4-8c89-0599b13efecd" Version="V1">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.crunchbase.com/organization/uber" DesignTimeRectangle="359, 596, 107, 17" ElementType="Text" FriendlyName="'www.uber.com'" FullSelectorArgument="&lt;webctrl aria-role='link' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='link' tag='A' type='' /&gt;" Guid="c46e24fe-3c48-46d6-87bf-92bbeb5b3341" InformativeScreenshot="a9f50b00729e07fce1906bd114469571.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Uber - Crunchbase Company Profile &amp;amp; Funding' /&gt;" SearchSteps="FuzzySelector">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="329, 482, 373, 160" ElementType="List" FriendlyName="'UL'" FullSelectorArgument="&lt;webctrl tag='UL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='UL' type='' aaname='' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+              <uix:NGetText.Text>
+                <OutArgument x:TypeArguments="x:String">
+                  <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">WebUrl</mca:CSharpReference>
+                </OutArgument>
+              </uix:NGetText.Text>
+            </uix:NGetText>
+            <uix:NGetText DisplayName="Get Text '10001+'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="39305500-3e2e-45f4-8c89-0599b13efecd" Version="V1">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.crunchbase.com/organization/salesforce" DesignTimeRectangle="359, 448, 48, 17" ElementType="Text" FriendlyName="'10001+'" FullSelectorArgument="&lt;webctrl aaname='10001+' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='A' type='' /&gt;" Guid="123ef2de-492f-474b-b039-68ed4fb32408" InformativeScreenshot="a0301d2d2b52316f80eac3194a87df7f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Salesforce - Crunchbase Company Profile &amp;amp; Funding' /&gt;" SearchSteps="FuzzySelector">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="327, 448, 24, 17" ElementType="Icon" FriendlyName="'PATH'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;chrome&amp;gt;div&amp;gt;mat-sidenav-container&amp;gt;mat-sidenav-content&amp;gt;div&amp;gt;ng-component&amp;gt;entity-v2&amp;gt;page-layout&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;page-centered-layout&amp;gt;div&amp;gt;row-card&amp;gt;div&amp;gt;div&amp;gt;profile-section&amp;gt;section-card&amp;gt;mat-card&amp;gt;div&amp;gt;div&amp;gt;fields-card&amp;gt;ul&amp;gt;li&amp;gt;label-with-icon&amp;gt;theme-icon&amp;gt;icon&amp;gt;svg&amp;gt;path' idx='2' tag='path' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' aaname='' tag='path' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABgAAAARCAYAAADHeGwwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADlSURBVDhPxVIhDoQwELzXYrFga/G1WLBobLFYsGgsei+zacvSayGXHNwkk5TOzk7Z9kU34zRgmiYax5GWZbE7O7A3zzPzDMkApRRlWebZ971ViNdSQ20K0QCcXDZwdIhp8MTwnwDMN2yQ57lVidehHrsnIHkHcs5oKE+ItQyR9xMiGfArPB9gjCGtNZVl6UcA4im2bXuYdV3XrKEWnmEYrLLDB8AYvv0U0WzbNvaFHnzLQ/iAoigOhVfsuo59TdN8aPgjBx8QFl2xqir2ISimOzwXgLf9Dd2c13WN6g4+4C7cHED0Brhway2R+QGzAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+              <uix:NGetText.Text>
+                <OutArgument x:TypeArguments="x:String">
+                  <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_7">Employees</mca:CSharpReference>
+                </OutArgument>
+              </uix:NGetText.Text>
+            </uix:NGetText>
+            <uix:NGetText DisplayName="Get Text 'San Francisco'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="39305500-3e2e-45f4-8c89-0599b13efecd" Version="V1">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.crunchbase.com/organization/salesforce" DesignTimeRectangle="359, 375, 88, 17" ElementType="Text" FriendlyName="'San Francisco'" FullSelectorArgument="&lt;webctrl aaname=' San Francisco' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='A' type='' /&gt;" Guid="486fa960-7e5f-4152-bd49-beccebb720f6" InformativeScreenshot="1880c94da98d1af2d66749d8c7c7b318.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Salesforce - Crunchbase Company Profile &amp;amp; Funding' /&gt;" SearchSteps="FuzzySelector">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="327, 371, 24, 24" ElementType="Icon" FriendlyName="'SVG'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;chrome&amp;gt;div&amp;gt;mat-sidenav-container&amp;gt;mat-sidenav-content&amp;gt;div&amp;gt;ng-component&amp;gt;entity-v2&amp;gt;page-layout&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;page-centered-layout&amp;gt;div&amp;gt;row-card&amp;gt;div&amp;gt;div&amp;gt;profile-section&amp;gt;section-card&amp;gt;mat-card&amp;gt;div&amp;gt;div&amp;gt;fields-card&amp;gt;ul&amp;gt;li&amp;gt;label-with-icon&amp;gt;theme-icon&amp;gt;icon&amp;gt;svg' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='svg' aaname='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADnSURBVEhL5ZS7CoQwEEX3a23T5h9Ma21rra0fYlprW+tZbiAQjfNwcYtlD1wIzjCHRJIXfZk/EmzbRjHGFKytqIJ1XSmEQE3THIJvqGmIgmVZyDlXDc9BDT0SrGDfd3F4DnrQy8EK5nmuBo3jmHIWo5eDFbRtexhSnjfWZQ29HGbBmbL2iODxHVz9g2maUh75B7hM5RAp0sVjBaDv+8uBZdAjIQosu9CeDVEAhmG4HIygpqEKcEu999VwfJNucEYVALw3Z4H2BmVMAoAnIg/H2opZALquS7nDLQHO3HLuJbcEn/DrAqI35JEkfVFTW04AAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+              <uix:NGetText.Text>
+                <OutArgument x:TypeArguments="x:String">
+                  <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_8">Place</mca:CSharpReference>
+                </OutArgument>
+              </uix:NGetText.Text>
+            </uix:NGetText>
+            <ui:AddDataRow DataRow="{x:Null}" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="334,185" sap2010:WorkflowViewState.IdRef="AddDataRow_1">
+              <ui:AddDataRow.ArrayRow>
+                <InArgument x:TypeArguments="s:Object[]">
+                  <mca:CSharpValue x:TypeArguments="s:Object[]" sap2010:WorkflowViewState.IdRef="CSharpValue`1_9">new Object[]{CompanyName, WebUrl, Employees, Place}</mca:CSharpValue>
+                </InArgument>
+              </ui:AddDataRow.ArrayRow>
+              <ui:AddDataRow.DataTable>
+                <InOutArgument x:TypeArguments="sd:DataTable">
+                  <mca:CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_10">Details</mca:CSharpReference>
+                </InOutArgument>
+              </ui:AddDataRow.DataTable>
+            </ui:AddDataRow>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1874, 1096" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEpSURBVDhPY2Bqu9TO1HLxD1P7xf8kYZAeoF4GsjTDMFAvA1YJEjBBA0LXP/ivOv06VjkQJmjAgYdf/geuvY9VDoQxDODuvvxfatJVOB9mgOyUa/85uy6hqAVhFAPiNj/6/+XX3/8gcPzp1//iE6+CDXj3/Q9Y7MOPP2AvIeuBGyDYd+X/99///gesuQ92xbyLb/+X7H0GNmDFtff/ubovgS34/PMvWB7DAL05N8EGsHRA+CANvD2XwQbEbHoIFmPvvPT/77///xWmXsM0ACR57/1PsM1RGx/+vwtkF+15Cjbg+psf/8OATl9y5R2YzQzVg2IACGvMvPF//c0P/08A/V+5/zlYYevRl//nX3z3/+Szr2ADFKehRimKAeTgwWAAxZmJoux8qR0A0QiIOXBRVqYAAAAASUVORK5CYII=" InformativeScreenshot="4b198c1bf6df5d097d374be26ffcfe69.png" Selector="&lt;html app='chrome.exe' title='Crunchbase'/&gt;">
+          <uix:TargetApp.Url>
+            <InArgument x:TypeArguments="x:String">
+              <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">CrunchbaseUrl + CompanyName</mca:CSharpValue>
+            </InArgument>
+          </uix:TargetApp.Url>
+        </uix:TargetApp>
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

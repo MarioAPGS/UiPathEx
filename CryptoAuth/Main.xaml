@@ -1,0 +1,213 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="932,1417" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="528,1352" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="CryptosTable" />
+      <Variable x:TypeArguments="x:String" Name="URL">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">https://www.binance.com/es/trade/</Literal>
+        </Variable.Default>
+      </Variable>
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ReadRange AddHeaders="True" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="486,87" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="cryptos" WorkbookPath="ficheros\criptos.xlsx">
+      <ui:ReadRange.DataTable>
+        <OutArgument x:TypeArguments="sd:DataTable">
+          <mca:CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">CryptosTable</mca:CSharpReference>
+        </OutArgument>
+      </ui:ReadRange.DataTable>
+      <ui:ReadRange.Range>
+        <InArgument x:TypeArguments="x:String">
+          <Literal x:TypeArguments="x:String" Value="" />
+        </InArgument>
+      </ui:ReadRange.Range>
+    </ui:ReadRange>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: 33,878.80 ｜ BTCUSDT | Binance Spot" sap:VirtualizedContainerService.HintSize="486,1133" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="e8f89a7e-839e-49ca-82c9-8cada30b957d" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="452,917" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="URL_Crypto">
+                <Variable.Default>
+                  <Literal x:TypeArguments="x:String" Value="" />
+                </Variable.Default>
+              </Variable>
+              <Variable x:TypeArguments="sd:DataTable" Name="cotizacionesCrypto" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:BuildDataTable DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="410,59" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;moneda&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;actual&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;maximo&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;minimo&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;">
+              <ui:BuildDataTable.DataTable>
+                <OutArgument x:TypeArguments="sd:DataTable">
+                  <mca:CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">cotizacionesCrypto</mca:CSharpReference>
+                </OutArgument>
+              </ui:BuildDataTable.DataTable>
+            </ui:BuildDataTable>
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="410,724" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="crypto" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,603" sap2010:WorkflowViewState.IdRef="Sequence_1">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="CoinName" />
+                      <Variable x:TypeArguments="x:String" Name="currentPrice" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="Assign_1">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">
+                          <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_4">URL_Crypto</mca:CSharpReference>
+                        </OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">
+                          <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">URL + crypto["monedas"]</mca:CSharpValue>
+                        </InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="334,81" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Version="V1">
+                      <uix:NGoToUrl.Url>
+                        <InArgument x:TypeArguments="x:String">
+                          <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">URL_Crypto</mca:CSharpValue>
+                        </InArgument>
+                      </uix:NGoToUrl.Url>
+                    </uix:NGoToUrl>
+                    <uix:NGetText DisplayName="Get Text 'BTC/USDT'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="e8f89a7e-839e-49ca-82c9-8cada30b957d" Version="V1">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.binance.com/es/trade/BTC_USDT?layout=pro" DesignTimeRectangle="34, 193, 120, 33" FriendlyName="'BTC/USDT'" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' /&gt;" Guid="c6b2d6c6-6f42-4ad6-993f-5050ca73c4ea" InformativeScreenshot="ffa8b1771a01a646516626dc3fe83557.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='34,264.56 ｜ BTCUSDT | Binance Spot' /&gt;" SearchSteps="FuzzySelector" />
+                      </uix:NGetText.Target>
+                      <uix:NGetText.Text>
+                        <OutArgument x:TypeArguments="x:String">
+                          <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_5">CoinName</mca:CSharpReference>
+                        </OutArgument>
+                      </uix:NGetText.Text>
+                    </uix:NGetText>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info">
+                      <ui:LogMessage.Message>
+                        <InArgument x:TypeArguments="x:Object">
+                          <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_8">CoinName</mca:CSharpValue>
+                        </InArgument>
+                      </ui:LogMessage.Message>
+                    </ui:LogMessage>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+              <ui:ForEachRow.DataTable>
+                <InArgument x:TypeArguments="sd:DataTable">
+                  <mca:CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">CryptosTable</mca:CSharpValue>
+                </InArgument>
+              </ui:ForEachRow.DataTable>
+            </ui:ForEachRow>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="d74df4059a7191d61b1f85a888075b4b.png" Selector="&lt;html app='chrome.exe' title='33,878.80 ｜ BTCUSDT | Binance Spot'/&gt;" Url="https://www.binance.com/es/trade/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

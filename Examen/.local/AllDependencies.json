@@ -8183,9 +8183,9 @@
     "restore": {
       "projectUniqueName": "Examen",
       "projectName": "Examen",
-      "projectPath": "C:\\Users\\extre\\Documents\\UiPath\\Examen\\.local",
+      "projectPath": "D:\\PROYECTOS\\UiPathEx\\Examen\\.local",
       "packagesPath": "C:\\Users\\extre\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\extre\\Documents\\UiPath\\Examen\\.local"
+      "outputPath": "D:\\PROYECTOS\\UiPathEx\\Examen\\.local"
     },
     "frameworks": {
       "net461": {
@@ -8216,7 +8216,7 @@
             "version": "[21.10.4, 21.10.4]"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\extre\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
+        "runtimeIdentifierGraphPath": "D:\\PROGRAMAS\\UiPath\\Studio\\runtime.json"
       }
     },
     "runtimes": {

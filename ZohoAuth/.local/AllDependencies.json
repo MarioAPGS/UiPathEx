@@ -7571,9 +7571,9 @@
     "restore": {
       "projectUniqueName": "ZohoAuth",
       "projectName": "ZohoAuth",
-      "projectPath": "C:\\Users\\extre\\Documents\\UiPath\\ZohoAuth\\.local",
+      "projectPath": "D:\\PROYECTOS\\UiPathEx\\ZohoAuth\\.local",
       "packagesPath": "C:\\Users\\extre\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\extre\\Documents\\UiPath\\ZohoAuth\\.local"
+      "outputPath": "D:\\PROYECTOS\\UiPathEx\\ZohoAuth\\.local"
     },
     "frameworks": {
       "net461": {
@@ -7599,7 +7599,7 @@
             "version": "[21.10.3, 21.10.3]"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\extre\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
+        "runtimeIdentifierGraphPath": "D:\\PROGRAMAS\\UiPath\\Studio\\runtime.json"
       }
     },
     "runtimes": {

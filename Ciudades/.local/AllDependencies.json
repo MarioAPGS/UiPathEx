@@ -7571,9 +7571,9 @@
     "restore": {
       "projectUniqueName": "Ciudades",
       "projectName": "Ciudades",
-      "projectPath": "D:\\OneDrive\\Documentos\\UiPath\\Ciudades\\.local",
+      "projectPath": "D:\\PROYECTOS\\UiPathEx\\Ciudades\\.local",
       "packagesPath": "C:\\Users\\extre\\.nuget\\packages\\",
-      "outputPath": "D:\\OneDrive\\Documentos\\UiPath\\Ciudades\\.local"
+      "outputPath": "D:\\PROYECTOS\\UiPathEx\\Ciudades\\.local"
     },
     "frameworks": {
       "net461": {
@@ -7599,7 +7599,7 @@
             "version": "[21.10.5, 21.10.5]"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\extre\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
+        "runtimeIdentifierGraphPath": "D:\\PROGRAMAS\\UiPath\\Studio\\runtime.json"
       }
     },
     "runtimes": {

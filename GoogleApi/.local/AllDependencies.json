@@ -8249,9 +8249,9 @@
     "restore": {
       "projectUniqueName": "GoogleApi",
       "projectName": "GoogleApi",
-      "projectPath": "C:\\Users\\extre\\Documents\\UiPath\\GoogleApi\\.local",
+      "projectPath": "D:\\PROYECTOS\\UiPathEx\\GoogleApi\\.local",
       "packagesPath": "C:\\Users\\extre\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\extre\\Documents\\UiPath\\GoogleApi\\.local"
+      "outputPath": "D:\\PROYECTOS\\UiPathEx\\GoogleApi\\.local"
     },
     "frameworks": {
       "net461": {
@@ -8287,7 +8287,7 @@
             "version": "[21.10.3, 21.10.3]"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\extre\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
+        "runtimeIdentifierGraphPath": "D:\\PROGRAMAS\\UiPath\\Studio\\runtime.json"
       }
     },
     "runtimes": {
